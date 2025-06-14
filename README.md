@@ -23,11 +23,17 @@ Some words were resegmented according to Етимологічний словни
 
 ## Example Data
 у:P/кра:R/їн:S/а:F,3
+
 у:P/кра:R/їн:S/ець:S,1
+
 у:P/кра:R/їн:S/к:S/а:F,1
+
 у:P/кра:R/їн:S/оч:S/к:S/а:F,2
+
 у:P/кра:R/їн:S/ств:S/о:F,2
+
 у:P/кра:R/їн:S/ськ:S/ий:F,1
+
 у:P/кра:R/їн:S/із:S/аці:S/я:F,1
 
 ## Statistics
