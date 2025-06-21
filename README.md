@@ -32,5 +32,5 @@ Some words were resegmented according to Етимологічний словни
 - у:P/кра:R/їн:S/із:S/аці:S/я:F,1
 
 ## Statistics
-v0.1 Total words: 154k
-v0.2 Total words: 286k
+- v0.1 Total words: 154k
+- v0.2 Total words: 286k
