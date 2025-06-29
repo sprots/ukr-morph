@@ -6,6 +6,12 @@ A dataset for Ukrainian morpheme segmentation and labeling, designed for linguis
 This dataset contains Ukrainian lemmas surface-segmented into morphemes (roots, prefixes, suffixes, interfixes, postfixes) with morpheme type labels. Each entry follows the format:
 morph:type(/morph:type)*,tier
 
+v0.3 data structure update:
+- added Multext East full tag (~20k entries with UNK tag to be addressed);
+- added Multex East POS tag predicted by Spacy and Flair, single if they agree and both if not;
+- added ambiguous segmentation/tagging flag;
+- added root(s), to be depreived of alternation, palatalisations, etc.
+
 ### Morpheme Types
 - `R` - Root
 - `P` - Prefix
