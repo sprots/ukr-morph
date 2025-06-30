@@ -203,7 +203,7 @@ def _process_adjective(msd: List[str], tag_set: Set[str], base_pos: str, is_adjp
         msd[2] = 'c'  # comparative
     elif 'comps' in tag_set: 
         msd[2] = 's'  # superlative
-    else: 
+    elif msd[1] == 'f':
         msd[2] = 'p'  # positive
     
     # Gender (Position 3)
