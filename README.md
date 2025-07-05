@@ -7,10 +7,15 @@ This dataset contains Ukrainian lemmas surface-segmented into morphemes (roots, 
 morph:type(/morph:type)*,tier
 
 v0.3 data structure update:
-- added Multext East full tag (~20k entries with UNK tag to be addressed);
-- added Multex East POS tag predicted by Spacy and Flair, single if they agree and both if not;
-- added ambiguous segmentation/tagging flag;
-- added root(s), to be depreived of alternation, palatalisations, etc.
+- Multext East full tag (~20k entries with UNK tag to be addressed);
+- Multex East POS tag predicted by Spacy and Flair, single if they agree and both if not;
+- ambiguous segmentation/tagging flag;
+- root(s), to be depreived of alternation, palatalisations, etc.
+v0.4 data structure update:
+- Ubertext corpus frequency in format 10+exp, mantissa, Multext East category code;
+- inflectional paradigm in dict_uk notation;
+- morpheme tags sequence pattern extracted from morph_tagged_lemma
+
 
 ### Morpheme Types
 - `R` - Root
@@ -30,13 +35,11 @@ v0.3 data structure update:
 Some words were resegmented according to Етимологічний словник української мови: В 7 т. К.: Наукова думка, 1982. – 632 с.
 
 ## Example Data
-- у:P/кра:R/їн:S/а:F,3
-- у:P/кра:R/їн:S/ець:S,1
-- у:P/кра:R/їн:S/к:S/а:F,1
-- у:P/кра:R/їн:S/оч:S/к:S/а:F,2
-- у:P/кра:R/їн:S/ств:S/о:F,2
-- у:P/кра:R/їн:S/ськ:S/ий:F,1
-- у:P/кра:R/їн:S/із:S/аці:S/я:F,1
+- multext,pos,freq,paradigm,morph_tagged_lemma,root,tier,ambiguity,lemma,reversed_lemma,Pattern
+- Npfsnn,Np;N,75Np,n10,у:P/кра:R/їн:S/а:F,кра,3,,україна,анїарку,PRSF
+- Ncmsny,N,64N,n22.p.a.<,у:P/кра:R/їн:S/ець:S,кра,1,,українець,ьценїарку,PRSS
+- Ncfsny,N,54N,n10.p2.ko.<,у:P/кра:R/їн:S/к:S/а:F,кра,1,,українка,акнїарку,PRSSF
+
 
 ## Statistics
 - v0.1 Total words: 154k
