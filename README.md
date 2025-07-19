@@ -7,15 +7,20 @@ This dataset contains Ukrainian lemmas surface-segmented into morphemes (roots, 
 morph:type(/morph:type)*,tier
 
 v0.3 data structure update:
-- Multext East full tag (~20k entries with UNK tag to be addressed);
+- Multext East full tag;
 - Multex East POS tag predicted by Spacy and Flair, single if they agree and both if not;
 - ambiguous segmentation/tagging flag;
 - root(s), to be depreived of alternation, palatalisations, etc.
 v0.4 data structure update:
 - Ubertext corpus frequency in format 10+exp, mantissa, Multext East category code;
 - inflectional paradigm in dict_uk notation;
-- morpheme tags sequence pattern extracted from morph_tagged_lemma
-
+- morpheme tags sequence pattern extracted from morph_tagged_lemma.
+v0.5 data structure uupdate:
+- cluster number (5k clusters grouped by feature (pos, paradigm, lemma length, unigram, bigram, affix, etc similarity);
+- ambiguity field now features lemma tag (c - core dataset lemma; r - rear morpheme; u - rear root; a - rear affix);
+- predicted lemma by model trained on a core dataset;
+- model confidence score;
+- error type (0 = No error, 1-6 error by frequency from more to less frequent, 9 core dataset error; Recommendations: n = No action needed, r = Review, a = Add to core dataset, e = Exclude from core dataset)
 
 ### Morpheme Types
 - `R` - Root
