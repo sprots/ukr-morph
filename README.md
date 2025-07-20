@@ -11,10 +11,12 @@ v0.3 data structure update:
 - Multex East POS tag predicted by Spacy and Flair, single if they agree and both if not;
 - ambiguous segmentation/tagging flag;
 - root(s), to be depreived of alternation, palatalisations, etc.
+
 v0.4 data structure update:
 - Ubertext corpus frequency in format 10+exp, mantissa, Multext East category code;
 - inflectional paradigm in dict_uk notation;
 - morpheme tags sequence pattern extracted from morph_tagged_lemma.
+
 v0.5 data structure uupdate:
 - cluster number (5k clusters grouped by feature (pos, paradigm, lemma length, unigram, bigram, affix, etc similarity);
 - ambiguity field now features lemma tag (c - core dataset lemma; r - rear morpheme; u - rear root; a - rear affix);
