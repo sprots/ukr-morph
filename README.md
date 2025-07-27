@@ -17,7 +17,7 @@ v0.4 data structure update:
 - inflectional paradigm in dict_uk notation;
 - morpheme tags sequence pattern extracted from morph_tagged_lemma.
 
-v0.5 data structure uupdate:
+v0.5 data structure update:
 - cluster number (5k clusters grouped by feature (pos, paradigm, lemma length, unigram, bigram, affix, etc similarity);
 - ambiguity field now features lemma tag (c - core dataset lemma; r - rear morpheme; u - rear root; a - rear affix);
 - predicted lemma by model trained on a core dataset;
@@ -38,6 +38,7 @@ v0.5 data structure uupdate:
 2. Segmented data from Яценко, Іван Тимофійович. Морфемний аналіз: Словник-довідник. Вища Школа, 1981 (~77k new words). Tagged by rule-based scipt. Manually corrected.
 3. Unsegmented words from Словник української мови : в 11 т. / І. К. Білодід (гол. ред.) та ін. Київ, 1970–1980 (~25k new words). Segmented and tagged by CNN model trained on previous data.
 4. VESUM base, geo-ukr-koatuu (4g), geo-ukr-hydro (4h) (~132k). Segmented and tagged by CNN model trained on previous data.
+5. UberTExt 2.0 1M most frequent lemmas added that resulted in 582k new noisy lemmas to be further reduced/corrected. Segmented and tagged by CNN+CRF model (P/R/F1=0.975, 90% word accuracy) trained on 80% of 286k dataset.
 
 Some words were resegmented according to Етимологічний словник української мови: В 7 т. К.: Наукова думка, 1982. – 632 с.
 
@@ -52,5 +53,6 @@ Some words were resegmented according to Етимологічний словни
 - у:P/кра:R/їн:S/із:S/ац:S/і:S/я:F,кра,0,3679,Ncfsnn,5,N,44N,n10.p1,1185,1,українізація,яіцазінїарку,PRSSSF,у:P/кра:R/їн:S/із:S/ац:S/і:S/я:F,0.732,0
 
 ## Statistics
-- v0.1 Total words: 154k
-- v0.2 Total words: 286k
+- v0.1 Total lemmas: 154k
+- v0.2 Total lemmas: 286k
+- v0.6 Total lemmas: 868k
