@@ -42,6 +42,34 @@ Additional linguistic features used:
 - **Character Frequency Ordering**: Characters mapped by frequency-based ranking from `UKRAINIAN_LETTERS` dictionary
 - **POS Tags**: 17 Ukrainian POS tags supported (e.g., `N`, `V`, `A`, `R`, etc.)
 
+## 📋 POS Tag Mapping Table
+
+This table provides mappings between different POS tagsets used in NLP pipelines for Ukrainian and other Slavic languages:
+
+| Multext-East | Universal POS (UPOS) | Pymorphy2 | Vesum | Description |
+|--------------|----------------------|-----------|-------|-------------|
+| `A`          | `ADJ`                | `ADJF`, `ADJS`,`COMP`,`PRTS` | `adj` | Adjective (full/short form) |
+| `S`          | `ADP`                | `PREP`    | `prep` | Adposition (preposition) |
+| `R`          | `ADV`                | `ADVB`    | `adv` | Adverb |
+| `Va`         | `AUX`                | —         | —     | Auxiliary verb |
+| `Cc`         | `CCONJ`              | `CONJ`    | `conj`+`coord` | Coordinating conjunction |
+| `Pd`         | `DET`                | —         | —     | Determiner |
+| `I`          | `INTJ`               | `INTJ`    | `intj`, `onomat` | Interjection / Onomatopoeia |
+| `N`          | `NOUN`               | `NOUN`    | `noun` | Noun |
+| `M`          | `NUM`                | `NUMR`    | `numr` | Numeral |
+| `Q`          | `PART`               | `PRCL`    | `part` | Particle |
+| `P`          | `PRON`               | `NPRO`    | —     | Pronoun |
+| `Np`         | `PROPN`              | —         | `noun` + `prop`, `geo`, `fname`, `lname`, `pname` | Proper noun |
+| `Cs`         | `SCONJ`              | `CONJ`    | `conj` + `subord` | Subordinating conjunction |
+| `V`          | `VERB`               | `VERB`, `INFN`,`PRED`,`GRND` | `verb` | Verb (finite, infinitive) |
+| `X`          | `X`                  | `UNKN`    | `noninfl`, `insert` | Other / Unspecified / Inserted text |
+
+---
+
+### 🔤 Vesum-Specific MSD (Morphological Tag) Conventions
+
+For the **Vesum** system, multi-character tags are built using positional encoding:
+
 ---
 
 ## 📈 Training Summary
