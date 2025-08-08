@@ -48,9 +48,11 @@ v0.7 data structure update:
 Some words were resegmented according to Етимологічний словник української мови: В 7 т. К.: Наукова думка, 1982. – 632 с.
 
 ## Example Data
-- lemma,morph_tagged_lemma,predicted,pos,multext,freq,tier,confidence,error,uk_confidence,ru_confidence,predicted_lang,ambiguity,mhv_pos,mhv_class,paradigm,cluster,reversed_lemma,pattern
-- українолюбство,у:P/кра:R/їн:S/о:I/люб:R/ств:S/о:F,у:P/кра:R/їн:S/о:I/люб:R/ств:S/о:F,N,Ncnsnn,17N,4,0.9,0,0.99,0.01,uk,0,13,1992,n2n,2526,овтсбюлонїарку,PRSIRSF
-- україномислячий,у:P/кра:R/їн:S/о:I/мисл:R/яч:S/ий:F,,A,Afpmsn,17A,4x,0.81,,0.99,0.01,uk,0,11,2321,adj,2526,йичялсимонїарку,PRSIRSF
+| lemma             | morph_tagged_lemma                                     | predicted                                           | pos | multext  | freq | tier | confidence | error | uk_confidence | ru_confidence | predicted_lang | ambiguity | mhv_pos | mhv_class | paradigm | cluster | reversed_lemma       | pattern |
+|------------------|--------------------------------------------------------|----------------------------------------------------|-----|----------|------|------|------------|-------|----------------|----------------|----------------|-----------|---------|-----------|----------|---------|----------------------|---------|
+| українолюбство   | у:P/кра:R/їн:S/о:I/люб:R/ств:S/о:F                     | у:P/кра:R/їн:S/о:I/люб:R/ств:S/о:F                | N   | Ncnsnn   | 17N  | 4    | 0.9        | 0     | 0.99           | 0.01           | uk             | 0         | 13      | 1992      | n2n      | 2526    | овтсбюлонїарку       | PRSIRSF |
+| україномислячий  | у:P/кра:R/їн:S/о:I/мисл:R/яч:S/ий:F                    |                                                    | A   | Afpmsn   | 17A  | 4x   | 0.81       |       | 0.99           | 0.01           | uk             | 0         | 11      | 2321      | adj      | 2526    | йичялсимонїарку      | PRSIRSF |
+
 
 ## Statistics
 - v0.1 Total lemmas: 154k
