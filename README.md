@@ -23,6 +23,7 @@ v0.5 data structure update:
 - predicted lemma by model trained on a core dataset;
 - model confidence score;
 - error type (0 = No error, 1-6 error by frequency from more to less frequent, 9 core dataset error; Recommendations: n = No action needed, r = Review, a = Add to core dataset, e = Exclude from core dataset)
+
 v0.7 data structure update:
 - mhv_pos, mhv_class from mphdict that duplicate pos/multext, paradigm.
 - uk_confidence,ru_confidence,predicted_lang to address tier 5 data contamination.
